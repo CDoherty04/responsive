@@ -43,6 +43,20 @@ nav a:hover {
     color: rgb(197, 126, 19);
 }
 
+#menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+
+#menu-btn span {
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
+
 main {
     text-align: center;
 }
@@ -103,8 +117,22 @@ h1 {
     background-color: rgb(248, 159, 26);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     #container ul {
         grid-template-columns: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: none;
+    }
+}
+
+@media (min-width: 48rem) {
+    #menu-btn {
+        display: none;
     }
 }
